@@ -61,8 +61,8 @@ Quando finalizar, você terá um terminal dentro do [VSCode](https://code.visual
 ## Aula 01
 
 ```bash
-#rode o script que gera os vídeos em vários formatos
+#execute o script que gera os vídeos em vários formatos
 $ sh script.sh
 ```
 
->🕐 pode ser que demore um pouco, depende do seu ambiente aí. Verifica as pastas que vão sendo criadas em *assets/timeline*.
+>🕐 pode ser que demore um pouco, depende do seu ambiente. Verifique as pastas que vão sendo criadas em *assets/timeline*.
