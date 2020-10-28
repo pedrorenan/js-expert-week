@@ -56,3 +56,13 @@ Quando finalizar, você terá um terminal dentro do [VSCode](https://code.visual
 
 
 >Eu escrevi um post sobre [VSCode](https://code.visualstudio.com/download) e [Remote-Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers), se quiser ler um pouco mais sobre o assunto, é só acessar ["Em busca da independência para o ambiente de desenvolvimento"](https://medium.com/@pedrorenan/em-busca-da-independ%C3%AAncia-para-o-ambiente-de-desenvolvimento-2adc22f6f250).
+
+
+## Aula 01
+
+```bash
+#rode o script que gera os vídeos em vários formatos
+$ sh script.sh
+```
+
+>🕐 pode ser que demore um pouco, depende do seu ambiente aí. Verifica as pastas que vão sendo criadas em *assets/timeline*.
