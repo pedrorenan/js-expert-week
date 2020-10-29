@@ -1,0 +1,32 @@
+{
+    "hostTag": "$HOST",
+    "fileResolutionTag": "$RESOLUTION",
+    "localhost": "http://127.0.0.1:8081",
+    "production": "",
+    "codec": "video/mp4; codecs=\"avc1.64001F, mp4a.40.2\"",
+    "intro": {
+        "url": "$HOST/timeline/01.intro/01.intro-12.733333-$RESOLUTION.mp4",
+        "at": 10,
+        "options": ["Guitarra", "Violão"], 
+        "defaultOption": "Guitarra"
+
+    },
+    "guitarra": {
+        "url": "$HOST/timeline/02.guitarra/02.guitarra-20.733333-$RESOLUTION.mp4",
+        "at": 17,
+        "options": ["Finalizar", "Violão"],
+        "defaultOption": ""
+
+    },
+    "violao": {
+        "url": "$HOST/timeline/02.guitarra/02.guitarra-20.733333-$RESOLUTION.mp4",
+        "at": 27,
+        "options": ["Finalizar", "Guitarra"],
+        "defaultOption": ""
+
+    },
+    "finalizar": {
+        "url": "$HOST/timeline/02.guitarra/02.guitarra-20.733333-$RESOLUTION.mp4"
+    }
+
+}

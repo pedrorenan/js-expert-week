@@ -65,4 +65,25 @@ Quando finalizar, você terá um terminal dentro do [VSCode](https://code.visual
 $ sh script.sh
 ```
 
->🕐 pode ser que demore um pouco, depende do seu ambiente. Verifique as pastas que vão sendo criadas em *assets/timeline*.
+>🕐 Pode ser que demore um pouco, depende do seu ambiente. Verifique as pastas que vão sendo criadas em *assets/timeline*.
+
+## Aula 02
+
+1. Use dois terminais dentro do VSCode.
+
+```bash
+#Terminal 1
+#execute o CDN
+$ npm run assets
+```
+
+```bash
+#Terminal 2
+#execute a aplicação
+$ npm run dev
+```
+
+2. No se navegador de internet, acesse http://localhost:8080 ou http://127.0.0.1:8080
+
+3. Clique na miniatura da Semana JS EXPERT e aperte o play!
+

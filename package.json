@@ -1,0 +1,25 @@
+{
+  "name": "js-expert-week",
+  "version": "1.0.0",
+  "description": "<p  align=\"center\"> <img  alt=\"GitHub language count\"  src=\"https://img.shields.io/github/languages/count/pedrorenan/js-expert-week\"> <img  alt=\"Repository size\"  src=\"https://img.shields.io/github/repo-size/pedrorenan/js-expert-week\"> <a  href=\"https://www.twitter.com/pedrorenan/\"> <img  alt=\"Siga no Twitter\"  src=\"https://img.shields.io/twitter/url?url=https://github.com/pedrorenan/js-expert-week\"> </a> <a  href=\"https://github.com/tgmarinho/README-ecoleta/commits/master\"> <img  alt=\"GitHub last commit\"  src=\"https://img.shields.io/github/last-commit/pedrorenan/js-expert-week\"> </a> <img  alt=\"License\"  src=\"https://img.shields.io/badge/license-MIT-brightgreen\"> <a  href=\"https://github.com/pedrorenan/js-expert-week/stargazers\"> <img  alt=\"Stargazers\"  src=\"https://img.shields.io/github/stars/pedrorenan/js-expert-week?style=social\"> </a> </p>",
+  "main": "index.js",
+  "scripts": {
+    "assets": "npx http-server --cors -p 8081 assets/",
+    "dev": "npx http-server --cors -p 8080 -c-1 public/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrorenan/js-expert-week.git"
+  },
+  "keywords": [],
+  "author": "Pedro Renan <pedrorenan@gmail.com> (https://www.linkedin.com/in/opedrorenan/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedrorenan/js-expert-week/issues"
+  },
+  "homepage": "https://github.com/pedrorenan/js-expert-week#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
