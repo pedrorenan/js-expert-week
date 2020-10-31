@@ -87,3 +87,4 @@ $ npm run dev
 
 3. Clique na miniatura da Semana JS EXPERT e aperte o play!
 
+## Aula 03
