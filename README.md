@@ -83,7 +83,7 @@ $ npm run assets
 $ npm run dev
 ```
 
-2. No se navegador de internet, acesse http://localhost:8080 ou http://127.0.0.1:8080
+2. No seu navegador de internet, acesse http://localhost:8080 ou http://127.0.0.1:8080
 
 3. Clique na miniatura da Semana JS EXPERT e aperte o play!
 
