@@ -88,3 +88,104 @@ $ npm run dev
 3. Clique na miniatura da Semana JS EXPERT e aperte o play!
 
 ## Aula 03
+
+
+Você precisa de uma conta AWS e de Access Key ID e Secret access key, com permissões para S3 e CloudFront, para configurar a aws cli:
+
+
+```bash
+#configure a aws cli
+$ aws configure
+
+# Digite a Access Key ID
+$ AWS Access Key ID []:xxxxxxxxxxxxxxxxxxxx
+
+# Digite a Secret Access Key
+$ AWS Secret Access Key []: xxxxxxxxxxxxxxxxxxxx
+
+# Digite o nome da região que irá utilizar na AWS
+$ Default region name []: us-east-1
+
+# Digite o formato de saída
+$ Default output format []: json
+
+```
+
+
+Você precisa de uma conta Serverless para realizar o deploy automático:
+```bash
+#faça o login na sua conta Serverless
+$ sls login
+```
+
+
+Depois de serguir as instruções e estar autenticad@, você fará o deploy automático do CDN e da aplicação:
+
+```bash
+#acesse a pasta do CDN
+$ cd assets
+
+#faça o deploy
+$ sls deploy
+
+#você deverá receber uma infomação como essa ao final do deploy
+bucket:          website-hericxb
+distributionUrl: https://dsf7go5wikho4.cloudfront.net
+bucketUrl:       http://website-hericxb.s3-website.us-east-1.amazonaws.com
+url:             https://dsf7go5wikho4.cloudfront.net
+```
+
+Copie a url exibida na mensagem de sucesso que você recebeu e coloque na linha 5 do arquivo */public/manifest.json*  e salve o arquivo.
+
+```json
+5 "production": "https://dsf7go5wikho4.cloudfront.net",
+```
+
+Faça o deploy da aplicação:
+
+```bash
+#retorne um nível 
+$ cd ..
+
+#acesse a pasta da aplicação
+$ cd public
+
+#faça o deploy
+$ sls deploy
+
+#você deverá receber uma infomação como essa ao final do deploy
+bucket:          website-erxflbt
+distributionUrl: https://d1ax6alpfo7qd2.cloudfront.net
+bucketUrl:       http://website-erxflbt.s3-website.us-east-1.amazonaws.com
+url:             https://d1ax6alpfo7qd2.cloudfront.net
+```
+
+Aguarde uns 10 minutos. Confira se o deploy está pronto no painel do CloudFront da AWS. Para visualizar o projeto, use a url exibida na mensagem de sucesso seguida de /index/index.html, como no exemplo abaixo:
+
+
+https://d1ax6alpfo7qd2.cloudfront.net/index/index.html
+
+
+### IMPORTANTE
+
+>💸 Não esqueça de parar suas aplicações para evitar custos desnecessários. Tem uma forma bem simples de fazer isso:
+
+```bash
+#acesse a pasta do CDN
+$ cd assets
+
+#remova a aplicação
+$ sls remove
+
+#retorne um nível 
+$ cd ..
+
+#acesse a pasta da aplicação
+$ cd public
+
+#remova a aplicação
+$ sls remove
+
+```
+
+>💵 Sempre confira o painel do CloudFront na AWS para verificar se as aplicações não estão disponíveis e gerando custos.
